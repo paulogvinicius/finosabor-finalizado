@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;400&family=Ysabeau+Office:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="mask" id="mask">
+    <!-- Logo Container -->
+    	<div class="background-image">
+        	<div class="logo-container" id="logoContainer">
+            <img src="imagens/logo abertura2.png" alt="Logo" class="fullscreen-logo" id="fullscreenLogo">
+        	</div>
+    	</div>
+	</div>
+
+	<div class="whatsapp-icon" onclick="abrirWhatsApp()">
+		<img src="imagens/WhatsApp.png" alt="whatsapp"  class="logo-whats">
+	</div>
+
+	<!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header>
+		<a href="./layout.html" id="logo">
+            <img src="imagens/logo principal.png" alt="logo principal">
+        </a>
+
+		<button id="openMenu">&#9776;</button>
+
+		<!-- Agrupa links de navegação no site. -->
+		<nav id="menu">
+
+			<button id="closeMenu">X</button>
+
+			<a href="#">INÍCIO</a>
+			<a href="#">SOBRE NÓS</a>
+			<a href="#">CARDÁPIO</a>
+		</nav>
+		<a href="./layout.html" id="logo-instagram">
+            <img src="imagens/logo instagram.png" alt="logo principal">
+        </a>
+		
+	</header>
+   
+	
+	
+
+	<!-- Agrupa informações e links relacionado ao conteúdo principal. -->
+	<aside>
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<input type="radio" name="radio-btn" id="radio5">
+				<input type="radio" name="radio-btn" id="radio6">
+
+	
+				<!--slide imagens-->
+				<div class="slide first">
+					<img src="imagens/bolo1.jpg" alt="imagen 1">
+				</div>
+				<div class="slide ">
+					<img src="imagens/bolo2.jpg" alt="imagen 2">
+				</div>
+				<div class="slide ">
+					<img src="imagens/bolo3.jpg" alt="imagen 3">
+				</div>
+				<div class="slide ">
+					<img src="imagens/bolo4.jpg" alt="imagen 4">
+				</div>
+				<div class="slide ">
+					<img src="imagens/bolo5.jpg" alt="imagen 5">
+				</div>
+				<div class="slide">
+					<img src="imagens/bolo6.jpg" alt="imagen 6">
+				</div>
+
+				<!-- fim slide imagens-->
+	
+				<!-- navigation auto-->
+				<div class="navigation-auto">
+						<div class="auto-btn1"></div>
+						<div class="auto-btn2"></div>
+						<div class="auto-btn3"></div>
+						<div class="auto-btn4"></div>
+						<div class="auto-btn5"></div>
+						<div class="auto-btn6"></div>
+				</div>
+	
+			</div>
+	
+			<div class ="manual-navigation">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+				<label for="radio5" class="manual-btn"></label>
+				<label for="radio6" class="manual-btn"></label>
+			</div>
+		</div>
+	</aside>
+		<!-- Agrupa o conteúdo principal da página ou aplicação. -->
+
+
+		<section class="cards">
+
+			<div class="card">
+				<div class="img-card">
+					<img src="imagens/bolo10.jpg" alt="Bolo 1">
+				</div>
+				<h2>Bolo 1</h2>
+				<div class="text-card">
+					<p>Imagine um bolo de chocolate fresco, recém-saído do forno, com uma aparência tentadora que faz com que a boca comece a salivar só de olhar para ele. A superfície dourada e crocante se destaca, contrastando com a textura macia e fofinha do interior. Ao cortar uma fatia, o aroma intenso de cacau puro invade o ar, fazendo você desejar uma colherada imediatamente.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="img-card">
+					<img src="imagens/bolo13.jpg" alt="Bolo 3">
+				</div>
+				<h2>Bolo 3</h2>
+				<div class="text-card">
+					<p>Imagine um bolo de chocolate fresco, recém-saído do forno, com uma aparência tentadora que faz com que a boca comece a salivar só de olhar para ele. A superfície dourada e crocante se destaca, contrastando com a textura macia e fofinha do interior. Ao cortar uma fatia, o aroma intenso de cacau puro invade o ar, fazendo você desejar uma colherada imediatamente.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="img-card">
+					<img src="imagens/bolo11.jpg" alt="Bolo 3">
+				</div>
+				<h2>Bolo 3</h2>
+				<div class="text-card">
+					<p>Imagine um bolo de chocolate fresco, recém-saído do forno, com uma aparência tentadora que faz com que a boca comece a salivar só de olhar para ele. A superfície dourada e crocante se destaca, contrastando com a textura macia e fofinha do interior. Ao cortar uma fatia, o aroma intenso de cacau puro invade o ar, fazendo você desejar uma colherada imediatamente.</p>
+				</div>
+			</div>
+			
+		</section>
+
+	
+		<!--Botão com link para outra seção com todos os produtos-->
+		<div class="botão">
+			<button id="mais"><a href="produtos.html" onclick="product()">ver mais</a></button>
+		</div>
+
+
+		<!--Sobre-->
+		<section class="sobre">
+			<div class="sob">
+				<h2>Quem Somos</h2>
+				<h3>Em 2018, a Fino Sabor deu início às suas atividades, mas a paixão pela arte da confeitaria floresceu muito antes desse marco. Uma tradição de família que se desenvolveu ao longo do tempo e que hoje, é aprimorada com toda a dedicação e profissionalismo para satisfazer plenamente nossos clientes. Nosso compromisso é entregar bolos e doces com a mesma paixão que nutrimos desde o início, há 26 anos. Afinal, amamos o que fazemos e estamos empenhados em proporcionar momentos deliciosos aos que escolhem a Fino Sabor.</h3>
+			</div>
+			<div>
+				<img src="imagens/quem somos.jpeg" alt="mulher boleira">
+			</div>
+
+		</section>
+	
+	
+	
+		<!--Entre em contato-->
+	
+		<section class="contatos">
+	
+			<div class="con">
+				<h1>entre em contato</h1>
+
+	
+				<button >
+					fale comigo
+				</button>
+	
+				
+			</div>
+	
+			<div class="cont-img">
+	
+				<img  src="imagens/celular.png" alt="">
+			</div>
+	
+	
+		</section>
+	
+
+
+	<footer class="mapa">
+
+        <div class="map">
+            <h1>Nosso estabelecimento</h1>
+            <h3>R. Rio Grande do Norte, 1482 - Alto da Figuueira</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3133.8010114956246!2d-54.968731898221066!3d-20.92283951961003!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU1JzIxLjEiUyA1NMKwNTgnMTEuMyJX!5e0!3m2!1spt-BR!2sbr!4v1706670906362!5m2!1spt-BR!2sbr" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+		
+			<div class="redes-sociais">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="imagens/insta.png" alt="link para o instagram"/>
+            </a>
+    
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="imagens/fb.png" alt="link para o facebook"/>
+            </a>
+			</div>
+       
+		</div>
+    </footer>
+
+	<footer class="direitos">
+		<h4>
+			Todos os direitos reservados.
+		</h4>
+	</footer>
+	<!-- Importação do arquivo JavaScript. -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
